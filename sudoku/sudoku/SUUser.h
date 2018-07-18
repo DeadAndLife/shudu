@@ -13,6 +13,4 @@
 
 + (instancetype)defaultUser;
 
-+ (NSString *)getUUID;
-
 @end

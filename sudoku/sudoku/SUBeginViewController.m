@@ -7,6 +7,7 @@
 //
 
 #import "SUBeginViewController.h"
+#import "SudokuManager.h"
 
 @interface SUBeginViewController ()
 
@@ -82,16 +83,22 @@
 
 - (IBAction)simpleButtonClick:(UIButton *)sender {
     //随机中间单元格数组，然后经过行列变换获得完整数独
+    NSArray<NodeModel *> *sudokuArray = [SudokuManager initSimpleSudoku];
+    
     //挖空35-50
 }
 
 - (IBAction)middleButtonClick:(UIButton *)sender {
     //随机左上，中间，右下三个单元格数组，使用回溯法生成完整数独
+    NSArray<NodeModel *> *sudokuArray = [SudokuManager initMiddleSudoku];
+    
     //挖空40-55
 }
 
 - (IBAction)hardButtonClick:(UIButton *)sender {
     //随机第一行数组，剩余使用回溯法生成完整数独
+    NSArray<NodeModel *> *sudokuArray = [SudokuManager initHardSudoku];
+    
     //挖空45-60
 }
 

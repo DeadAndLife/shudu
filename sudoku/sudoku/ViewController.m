@@ -46,9 +46,6 @@
 }
 
 - (IBAction)beginButtonClick:(UIButton *)sender {
-    //生成二维数独数组
-    
-    
     SUBeginViewController *beginVC = [[SUBeginViewController alloc] init];
     beginVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     

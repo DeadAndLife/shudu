@@ -21,14 +21,9 @@
 @property (nonatomic, strong) NSNumber *currentNumber;
 
 /**
- 横坐标
+ 索引0-80
  */
-@property (nonatomic, assign) NSUInteger x;
-
-/**
- 纵坐标
- */
-@property (nonatomic, assign) NSUInteger y;
+@property (nonatomic, assign) NSUInteger index;
 
 /**
  可选数字数组
